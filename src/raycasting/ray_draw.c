@@ -70,7 +70,7 @@ void	draw_minimap(t_data *data)
 		{
 			if (data->map[y][x] == '1')
 				draw_minimap_square(&data->view.screen, x, y, COLOR_MINIMAP);
-			else if (data->map[y][x] == '0' || data->map[y][x] == 'W')
+			else if (data->map[y][x] == '0')
 				draw_minimap_square(&data->view.screen, x, y,COLOR_BORDER_MINIMAP);
 			y++;
 		}

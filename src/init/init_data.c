@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init_data.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rlins <rlins@student.42sp.org.br>          +#+  +:+       +#+        */
+/*   By: lucas <lucas@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/04 15:21:54 by rlins             #+#    #+#             */
-/*   Updated: 2023/03/28 08:46:08 by rlins            ###   ########.fr       */
+/*   Updated: 2023/03/28 21:51:59 by lucas            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,18 +25,16 @@ static void init_ray(t_ray *r, t_data *data)
 	// Tentei atribuir a inicialização do mapa, mas ainda deu problema. No mapa '1-simple-map.cub' da merda.
 	// r->pos[X] = data->ray.dir_char;
 	// r->pos[Y] = data->ray.dir_char;
-	r->pos[0] = 2;
-	r->pos[1] = 2;
 	r->dir[0] = 0;
-	r->dir[1] = -1;
+	r->dir[1] = 1;
 	r->plane[0] = 0.66;
 	r->plane[1] = 0;
 	r->speed = 0.1;
 }
 
-void	init_data(t_data *data)
+void	init_data(t_data *d)
 {
-	ft_bzero(data, sizeof(t_data));
-	init_ray(&data->ray, data);
+	ft_bzero(d, sizeof(t_data));
+	init_ray(&d->ray, d);
 
 }

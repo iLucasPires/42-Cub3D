@@ -92,9 +92,8 @@ norma:
 	norminette $(PATH_SRC) $(LIBFT_PATH) $(INC_PATH)
 
 
-run:
+run: all
 	./cub3D ./maps/1.cub
-#	./cub3D ./maps/4.cub
 
 valgrind:
 	$(LEAK) ./cub3D ./maps/2-pdf-map.cub

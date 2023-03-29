@@ -15,15 +15,14 @@ void	calc_raycast(t_data *data)
 		draw_wall(data, pixel);
 		pixel++;
 	}
-	ft_mlx_put_img(&data->view, &data->view.screen, 0, 0);
 }
 
 int	ray_loop(t_data *data)
 {
-
 	draw_ceiling(data);
 	draw_floor(data);
 	calc_raycast(data);
 	draw_minimap(data);
+	ft_mlx_put_img(&data->view, &data->view.screen, 0, 0);
 	return (SUCCESS);
 }
