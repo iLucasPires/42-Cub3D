@@ -6,7 +6,7 @@
 /*   By: lucas <lucas@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/21 14:58:12 by lucas             #+#    #+#             */
-/*   Updated: 2023/03/29 20:35:13 by lucas            ###   ########.fr       */
+/*   Updated: 2023/03/30 01:53:54 by lucas            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	calc_camera(t_ray *r, int pixel)
 {
-	r->multiplier = 2 * (double)pixel / (double)WIDTH - 1;
+	r->multiplier = 2 * ((double)pixel / (double)WIDTH) - 1;
 	r->ray_dir[X] = r->dir[X] + r->plane[X] * r->multiplier;
 	r->ray_dir[Y] = r->dir[Y] + r->plane[Y] * r->multiplier;
 }
