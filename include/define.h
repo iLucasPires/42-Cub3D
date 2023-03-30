@@ -5,8 +5,8 @@
 # define S_KEY_CONST 's'
 # define D_KEY_CONST 'd'
 # define W_KEY_CONST 'w'
-# define RIGHT_KEY_CONST 65361
-# define LEFT_KEY_CONST 65363
+# define RIGHT_KEY_CONST 65363
+# define LEFT_KEY_CONST 65361
 # define R_KEY_CONST 114
 
 # define ESC_KEY_CONST 65307
